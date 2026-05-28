@@ -1,0 +1,4 @@
+Variable,Missing Count,Missing %,Treatment
+Total Turnover Log,3822,7.64%,"Median imputation — log value 7.0179 (R1,115.40)"
+Referring Doctor Name,3159,6.32%,"No imputation — missing means no referral, handled as 0 in Has Referral during Feature Engineering"
+All other variables,0,0.00%,No action required

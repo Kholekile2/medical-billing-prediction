@@ -1,0 +1,12 @@
+{
+    "model": "Logistic Regression",
+    "accuracy": 0.6399,
+    "auc": 0.6973,
+    "f1_delayed": 0.4739,
+    "precision_delayed": 0.3655,
+    "recall_delayed": 0.6738,
+    "true_negatives": 7165,
+    "false_positives": 4224,
+    "false_negatives": 1178,
+    "true_positives": 2433
+}

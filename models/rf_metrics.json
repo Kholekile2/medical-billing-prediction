@@ -1,0 +1,13 @@
+{
+    "model": "Random Forest",
+    "n_estimators": 500,
+    "accuracy": 0.6862,
+    "auc": 0.755,
+    "f1_delayed": 0.5144,
+    "precision_delayed": 0.4099,
+    "recall_delayed": 0.6904,
+    "true_negatives": 7800,
+    "false_positives": 3589,
+    "false_negatives": 1118,
+    "true_positives": 2493
+}

@@ -1,0 +1,16 @@
+{
+    "model": "XGBoost",
+    "n_estimators": 500,
+    "learning_rate": 0.1,
+    "max_depth": 6,
+    "scale_pos_weight": 3.1533,
+    "accuracy": 0.6815,
+    "auc": 0.757,
+    "f1_delayed": 0.5143,
+    "precision_delayed": 0.4063,
+    "recall_delayed": 0.7004,
+    "true_negatives": 7694,
+    "false_positives": 3695,
+    "false_negatives": 1082,
+    "true_positives": 2529
+}

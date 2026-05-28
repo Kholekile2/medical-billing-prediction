@@ -1,0 +1,30 @@
+# Data files - confidential, do not commit
+dataset/*.xlsx
+dataset/*.csv
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyc
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+
+# Model outputs that can be regenerated (optional - comment out to keep)
+# models/*.json
+# models/*.csv

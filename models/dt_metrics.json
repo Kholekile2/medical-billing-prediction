@@ -1,0 +1,13 @@
+{
+    "model": "Decision Tree",
+    "max_depth": 10,
+    "accuracy": 0.6705,
+    "auc": 0.7251,
+    "f1_delayed": 0.4888,
+    "precision_delayed": 0.3901,
+    "recall_delayed": 0.6544,
+    "true_negatives": 7694,
+    "false_positives": 3695,
+    "false_negatives": 1248,
+    "true_positives": 2363
+}
