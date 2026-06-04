@@ -102,9 +102,9 @@ All notebooks use `random_state=42` for reproducibility.
 
 ## Author
 
-Kholekile Mpengesi
-University of the Western Cape
-BIA 716 Applied Research Project
+Kholekile Mpengesi  
+University of the Western Cape  
+BIA 716 Applied Research Project  
 Supervisor: Ms Chanel Morkel
 
 ## License
