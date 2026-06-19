@@ -10,6 +10,10 @@ Medical billing bureaus face cash flow pressure and bad debt risk when invoices 
 
 The final model is an XGBoost classifier that achieved a ROC-AUC of 0.7570 and recall of 70.04% on a held-out test set of 15,000 records.
 
+![ROC Curve Comparison](outputs/figures/XGBoost/model_comparison_4models.png)
+
+*ROC curves for all four models on the 15,000-record test set. Random Forest and XGBoost sit almost on top of each other and clearly above Decision Tree and Logistic Regression. Logistic Regression at 0.6973 falls below the 0.70 acceptance threshold.*
+
 ## Dataset
 
 - **Source:** Private patient billing records (self-pay, no medical scheme)
@@ -65,13 +69,13 @@ pip install -r requirements.txt
 5. `03d_model_comparison.ipynb` — compares all four models, runs bootstrap analysis
 6. `03e_shap_analysis.ipynb` — SHAP explainability on the selected model
 
-All notebooks use `random_state=42` for reproducibility.
+All notebooks use `random_state=3929674` (student number) for reproducibility.
 
 ## Methodology Summary
 
 1. **Data preparation** — reduced from 32 raw variables to 6 predictors through quality screening, association testing (Cramer's V), and multicollinearity assessment. No records were dropped.
 2. **Modelling** — four classifiers built with class imbalance handling (balanced class weights / scale_pos_weight).
-3. **Model selection** — bootstrap confidence intervals (1,000 iterations) used to compare Random Forest and XGBoost statistically.
+3. **Model selection** — bootstrap confidence intervals (1,000 iterations) used to compare Random Forest and XGBoost statistically. The two models were tied on ROC-AUC, F1, and Precision. XGBoost was significantly better on Recall and Random Forest on Accuracy. XGBoost was selected because Recall is the priority metric for imbalanced classification in this billing context.
 4. **Explainability** — SHAP analysis on the selected XGBoost model for global importance, direction of effect, interactions, and individual predictions.
 
 ## Key Findings
@@ -81,6 +85,14 @@ All notebooks use `random_state=42` for reproducibility.
 - **Consulting Rooms** and **Dental / Obstetrics / Ophthalmology** specialties are the most likely to be timely.
 - **Age Bracket** strongly predicts timely processing for young invoices.
 - **Debtor Status** contributes the least once clinical and facility characteristics are known.
+
+![SHAP Global Importance](outputs/figures/XGBoost%20SHAP/shap_bar_importance_xgb.png)
+
+*SHAP global importance for the XGBoost model. Facility Type dominates at 27.2% of total importance, followed by Specialty at 19.2%, Posted Billing Group at 16.6%, Age Bracket at 16.5%, and ICD10 Chapter at 14.4%. Debtor Status contributes the least at 6.2%.*
+
+![SHAP Beeswarm](outputs/figures/XGBoost%20SHAP/shap_beeswarm_xgb.png)
+
+*SHAP beeswarm on the XGBoost model. Each dot is one invoice from the test set. Red means the feature was active for that invoice, blue means absent. Position on the x-axis shows the direction of effect on the prediction: left pushes toward Timely, right pushes toward Delayed. Hospital invoices and Mental Health and General Practice specialties push consistently toward Delayed, while Consulting Rooms and Obstetrics, Dental, and Ophthalmology push toward Timely.*
 
 ## Model Performance (Test Set, n = 15,000)
 
@@ -102,9 +114,9 @@ All notebooks use `random_state=42` for reproducibility.
 
 ## Author
 
-Kholekile Mpengesi  
-University of the Western Cape  
-BIA 716 Applied Research Project  
+Kholekile Mpengesi
+University of the Western Cape
+BIA 716 Applied Research Project
 Supervisor: Mrs Chanel Morkel
 
 ## License
