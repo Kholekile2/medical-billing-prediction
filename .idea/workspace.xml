@@ -4,14 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c732dea4-d8db-443a-8667-5dc36e76e80a" name="Changes" comment="" />
+    <list default="true" id="c732dea4-d8db-443a-8667-5dc36e76e80a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/03_modelling/03d_model_comparison.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/03_modelling/03d_model_comparison.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/figures/SHAP/shap_bar_importance.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/figures/SHAP/shap_beeswarm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/figures/SHAP/shap_beeswarm_xgb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/figures/SHAP/shap_dependence_plots_xgb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/figures/SHAP/shap_individual_predictions_xgb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/figures/SHAP/shap_violin_xgb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/figures/XGBoost/figures - Shortcut.lnk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/figures/XGBoost/shap_bar_importance_xgb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/figures/lr_roc_confusion.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/figures/lr_variable_importance.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/figures/model_comparison.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/figures/shap_beeswarm_xgb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/figures/shap_dependence_plots.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/figures/shap_individual_predictions.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/figures/shap_violin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/figures/variable_importance_comparison.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/figures/xgb_variable_importance.png" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="45" />
+    <option name="cachedIndexableFilesCount" value="46" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
