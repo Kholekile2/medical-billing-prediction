@@ -114,10 +114,10 @@ All notebooks use `random_state=3929674` (student number) for reproducibility.
 
 ## Author
 
-Kholekile Mpengesi
-University of the Western Cape
-BIA 716 Applied Research Project
-Supervisor: Mrs Chanel Morkel
+Kholekile Mpengesi  
+University of the Western Cape  
+BIA 716 Applied Research  
+Project Supervisor: Mrs Chanel Morkel
 
 ## License
 
