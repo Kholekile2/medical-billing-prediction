@@ -105,7 +105,7 @@ All notebooks use `random_state=42` for reproducibility.
 Kholekile Mpengesi  
 University of the Western Cape  
 BIA 716 Applied Research Project  
-Supervisor: Ms Chanel Morkel
+Supervisor: Mrs Chanel Morkel
 
 ## License
 
